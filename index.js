@@ -8,7 +8,22 @@ const questions = [
     {
       type: 'input',
       message: 'What is the name of your project?',
-      name: 'projectName',
+      name: 'project',
+    },
+    {
+        type: 'input',
+        message: 'Enter a description for your project:',
+        name: 'desc',
+    },
+    {
+        type: 'input',
+        message: 'Enter installation instructions for your project:',
+        name: 'install',
+    },
+    {
+        type: 'input',
+        message: 'What is the name of your project?',
+        name: 'projectName',
     },
     {
       type: 'input',
