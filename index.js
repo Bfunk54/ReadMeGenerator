@@ -62,7 +62,7 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer
         .prompt(questions)
-        .then((response) =>  writeToFile(response.name.project, response));
-}       .then((response) =>
+        .then((response) =>  writeToFile(response.name.project, response), renderLicenseBadge(response.name.license), renderLicenseLink(response.name.license), renderLicenseSection(response.name.license));
+} 
 // Function call to initialize app
 init();
