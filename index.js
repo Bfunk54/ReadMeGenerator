@@ -41,9 +41,9 @@ const questions = [
         name: 'license',
     },
     {
-      type: 'input',
-      message: 'Github Url:',
-      name: 'github',
+        type: 'input',
+        message: 'Github Username:',
+        name: 'github',
     },
     {
         type: 'input',
@@ -55,7 +55,11 @@ const questions = [
 function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    inquirer
+        .prompt(questions)
+        .then((response) =>  writeToFile(response.name.project, response));
 
+}
 // Function call to initialize app
 init();
