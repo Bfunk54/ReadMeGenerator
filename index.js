@@ -33,7 +33,7 @@ const questions = [
     {
         type: 'input',
         message: 'Enter testing instructions:',
-        name: 'testing',
+        name: 'test',
     },
     {
         type: 'list',
@@ -63,6 +63,6 @@ function init() {
     inquirer
         .prompt(questions)
         .then((response) =>  writeToFile(response.name.project, response));
-}
+}       .then((response) =>
 // Function call to initialize app
 init();
