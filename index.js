@@ -4,8 +4,23 @@ const fs = require('fs');
 const genMarkdown = require('generatorMarkdown');
 
 // TODO: Create an array of questions for user input
-const questions = [];
-
+const questions = [
+    {
+      type: 'input',
+      message: 'What is the name of your project?',
+      name: 'projectName',
+    },
+    {
+      type: 'input',
+      message: 'LinkedIn Url:',
+      name: 'linkedin',
+    },
+    {
+      type: 'input',
+      message: 'Github Url:',
+      name: 'github',
+    }
+];
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
 
