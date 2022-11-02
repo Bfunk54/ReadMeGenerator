@@ -3,7 +3,7 @@
 # ReadMeGen
 
 ## Description
-This project asks you questions in the console to put together a quality, professional looking read me file to help your project look better and be much easier to use
+This project asks you questions in the console to put together a quality, professional looking read me file to help your project look better and be much easier to use.
 
 ## Table of Contents
 1. [Installation](#installation)
@@ -31,7 +31,7 @@ After using npm install or npm i to install the dependencies needed, run the com
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Contributing
-Bfunk54/ReadMeGenerator
+Github branch: Bfunk54/ReadMeGenerator
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Tests
@@ -39,7 +39,9 @@ To test, install the project folder and open into it in your terminal. Run the c
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Screenshots
-
+![](./images/Screen%20Shot%202022-11-02%20at%2010.26.23%20AM.png)
+![](./images/Screen%20Shot%202022-11-02%20at%2010.34.18%20AM.png)
+![](./images/Screen%20Shot%202022-11-02%20at%2010.34.55%20AM.png)
 
 ## Questions
 Github: Bfunk54
