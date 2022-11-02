@@ -53,8 +53,8 @@ const questions = ([
     }
 ]);
 // TODO: Create a function to write README file
-function writeToFile(data) {
-    fs.writeFile('README.md', '', data, (err) => 
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, 'utf8', (err) => 
     err ? console.log(err) : console.log('Your README file has been saved.')
     )
 }
@@ -64,7 +64,9 @@ function init() {
     inquirer
     .prompt(questions)
     .then(function(response) {
-        writeToFile(genMarkdown(response));
+        let fileName = JSON.stringify(response.project);
+        fileName += 'README.md'
+        writeToFile(fileName, genMarkdown(response));
         renderLicenseBadge(response.license);
         renderLicenseLink(response.license);
         renderLicenseSection(response.license);
