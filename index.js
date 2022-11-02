@@ -64,12 +64,9 @@ function init() {
     inquirer
     .prompt(questions)
     .then(function(response) {
-        let fileName = JSON.stringify(response.project);
+        let fileName = response.project;
         fileName += 'README.md'
         writeToFile(fileName, genMarkdown(response));
-        renderLicenseBadge(response.license);
-        renderLicenseLink(response.license);
-        renderLicenseSection(response.license);
     })
 
 }
