@@ -39,9 +39,20 @@ function generateMarkdown(data) {
 # ${data.project}
 
 ## Description
-${data.description}
+${data.desc}
 
 ## Table of Contents
+1. [Installation](#installation)
+#
+2. [Description](#description)
+#
+3. [Usage](#usage)
+#
+4. [Contribution](#contribution)
+#
+5. [Instructions](#instructions)
+#
+6. [License](#license)
 
 ## Installation
 ${data.install}
