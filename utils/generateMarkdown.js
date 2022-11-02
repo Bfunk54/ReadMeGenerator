@@ -75,7 +75,7 @@ ${data.test}
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Questions
-Github: ${data.github}
+Github: https://github.com/${data.github}
 
 Email me with any questions: ${data.email}
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

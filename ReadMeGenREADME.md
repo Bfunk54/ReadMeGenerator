@@ -44,7 +44,7 @@ To test, install the project folder and open into it in your terminal. Run the c
 ![](./images/Screen%20Shot%202022-11-02%20at%2010.34.55%20AM.png)
 
 ## Questions
-Github: Bfunk54
+Github: https://github.com/Bfunk54
 
 Email me with any questions: ben_fein@icloud.com
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
