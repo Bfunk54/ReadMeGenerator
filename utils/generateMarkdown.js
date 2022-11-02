@@ -16,7 +16,16 @@ function renderLicenseLink(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  
+  switch(license) {
+    case 'MIT License' :
+      return '[![MIT License](https://img.shields.io/badge/License-MIT-yellow)](https://opensource.org/licenses/MIT)'
+
+    case 'GNU' :
+      return '[![GNU](https://img.shields.io/badge/License-GNU-red)](https://www.gnu.org/licenses/)'
+
+    case 'Creative Commons' :
+      return '[![Creative Commons](https://img.shields.io/badge/License-Creative%20Commons-orange)](https://creativecommons.org/)'
+  }
 }
 
 // TODO: Create a function that returns the license section of README
