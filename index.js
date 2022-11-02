@@ -65,7 +65,7 @@ function init() {
     .prompt(questions)
     .then(function(response) {
         let fileName = response.project;
-        let fileName1 = fileName.replace(/\s/g , "-");
+        let fileName1 = fileName.replace(/\s/g , "_");
         fileName1 += 'README.md'
         writeToFile(fileName, genMarkdown(response));
     })
