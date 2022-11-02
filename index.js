@@ -1,10 +1,10 @@
 // Require the packages needed for this project
 const inquirer = require('inquirer');
+const genMarkdown = require('./utils/generateMarkdown');
 const fs = require('fs');
-const genMarkdown = require('generatorMarkdown');
 
 // TODO: Create an array of questions for user input
-const questions = [
+const questions = ([
     {
         type: 'input',
         message: 'What is the name of your project?',
@@ -49,11 +49,11 @@ const questions = [
         type: 'input',
         message: 'Email Address:',
         name: 'email',
-    },
-];
+    }
+]);
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile(fileName + 'README.md', data, (err) => 
+    fs.writeFile(JSON.stringify(fileName) + 'README.md', data, (err) => 
     err ? console.log(err) : console.log('Your README file has been saved.')
     )
 }
@@ -61,8 +61,14 @@ function writeToFile(fileName, data) {
 // TODO: Create a function to initialize app
 function init() {
     inquirer
-        .prompt(questions)
-        .then((response) =>  writeToFile(response.name.project, response), renderLicenseBadge(response.name.license), renderLicenseLink(response.name.license), renderLicenseSection(response.name.license));
-} 
-// Function call to initialize app
-init();
+    .prompt(questions)
+    .then(function(response) {
+        writeToFile(response.project, response);
+        renderLicenseBadge(response.license);
+        renderLicenseLink(response.name.license);
+    }
+
+       // , , renderLicenseSection(response.name.license));
+    } 
+    // Function call to initialize app
+    init();
