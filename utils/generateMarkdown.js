@@ -78,6 +78,7 @@ ${data.test}
 Github: ${data.github}
 
 Email me with any questions: ${data.email}
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 `;}
 
 module.exports = generateMarkdown;

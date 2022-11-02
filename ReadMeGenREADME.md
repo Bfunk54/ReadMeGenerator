@@ -38,7 +38,11 @@ Bfunk54/ReadMeGenerator
 To test, install the project folder and open into it in your terminal. Run the command npm install or npm i to install the dependencies. Next run node index.js to run the program, go through it and make sure the file is created correctly.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## Screenshots
+
+
 ## Questions
 Github: Bfunk54
 
 Email me with any questions: ben_fein@icloud.com
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
