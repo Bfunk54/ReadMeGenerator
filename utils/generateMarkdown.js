@@ -30,7 +30,12 @@ function renderLicenseBadge(license) {
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+function renderLicenseSection(license) {
+  let licenseStr1 = license.replace(/\s/g , "-");
+  let licenseStr2 = licenseStr1.toLowerCase();
+  
+  return licenseStr2;
+}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
@@ -54,31 +59,33 @@ ${data.desc}
 #
 6. [License](#license)
 
+<p align="right">(<a href="#${renderLicenseSection(data.license)}">back to top</a>)</p>
+
 ## Installation
 ${data.install}
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#${renderLicenseSection(data.license)}">back to top</a>)</p>
 
 ## Usage
 ${data.usage}
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#${renderLicenseSection(data.license)}">back to top</a>)</p>
 
 ## License
 ${renderLicenseLink(data.license)}
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#${renderLicenseSection(data.license)}">back to top</a>)</p>
 
 ## Contributing
 ${data.contributions}
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#${renderLicenseSection(data.license)}">back to top</a>)</p>
 
 ## Tests
 ${data.test}
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#${renderLicenseSection(data.license)}">back to top</a>)</p>
 
 ## Questions
 Github: https://github.com/${data.github}
 
 Email me with any questions: ${data.email}
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#${renderLicenseSection(data.license)}">back to top</a>)</p>
 `;}
 
 module.exports = generateMarkdown;
