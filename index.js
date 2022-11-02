@@ -39,6 +39,7 @@ const questions = ([
         type: 'list',
         message: 'What license is your project under:',
         name: 'license',
+        choices: ['MIT License', 'GNU', 'Creative Commons']
     },
     {
         type: 'input',
@@ -52,8 +53,8 @@ const questions = ([
     }
 ]);
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-    fs.writeFile(JSON.stringify(fileName) + 'README.md', data, (err) => 
+function writeToFile(data) {
+    fs.writeFile('README.md', '', data, (err) => 
     err ? console.log(err) : console.log('Your README file has been saved.')
     )
 }
@@ -63,12 +64,12 @@ function init() {
     inquirer
     .prompt(questions)
     .then(function(response) {
-        writeToFile(response.project, response);
+        writeToFile(genMarkdown(response));
         renderLicenseBadge(response.license);
-        renderLicenseLink(response.name.license);
-    }
+        renderLicenseLink(response.license);
+        renderLicenseSection(response.license);
+    })
 
-       // , , renderLicenseSection(response.name.license));
-    } 
+}
     // Function call to initialize app
     init();
