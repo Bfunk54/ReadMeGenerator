@@ -49,15 +49,15 @@ ${data.desc}
 ## Table of Contents
 1. [Installation](#installation)
 #
-2. [Description](#description)
+2. [Usage](#usage)
 #
-3. [Usage](#usage)
+3. [License](#license)
 #
-4. [Contribution](#contribution)
+4. [Contribute](#contributing)
 #
-5. [Instructions](#instructions)
+5. [Tests](#tests)
 #
-6. [License](#license)
+6. [Questions](#questions)
 
 <p align="right">(<a href="#${renderLicenseSection(data.license)}">back to top</a>)</p>
 
