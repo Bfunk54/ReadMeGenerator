@@ -81,6 +81,10 @@ ${data.contributions}
 ${data.test}
 <p align="right">(<a href="#${renderLicenseSection(data.license)}">back to top</a>)</p>
 
+## Screenshots
+![]()
+<p align="right">(<a href="#mit-license">back to top</a>)</p>
+
 ## Questions
 Github: https://github.com/${data.github}
 
