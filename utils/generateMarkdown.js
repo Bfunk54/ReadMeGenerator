@@ -57,7 +57,9 @@ ${data.desc}
 #
 5. [Tests](#tests)
 #
-6. [Questions](#questions)
+6. [Screenshots](#screenshots)
+#
+7. [Questions](#questions)
 
 <p align="right">(<a href="#${renderLicenseSection(data.license)}">back to top</a>)</p>
 
