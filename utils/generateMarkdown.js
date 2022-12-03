@@ -64,37 +64,46 @@ ${data.desc}
 <p align="right">(<a href="#${renderLicenseSection(data.license)}">back to top</a>)</p>
 
 ## Installation
+#
 ${data.install}
 <p align="right">(<a href="#${renderLicenseSection(data.license)}">back to top</a>)</p>
 
 ## Usage
+#
 ${data.usage}
 <p align="right">(<a href="#${renderLicenseSection(data.license)}">back to top</a>)</p>
 
 ## License
+#
 ${renderLicenseLink(data.license)}
 <p align="right">(<a href="#${renderLicenseSection(data.license)}">back to top</a>)</p>
 
 ## Contributing
+#
 ${data.contributions}
 <p align="right">(<a href="#${renderLicenseSection(data.license)}">back to top</a>)</p>
 
 ## Tests
+#
 ${data.test}
 <p align="right">(<a href="#${renderLicenseSection(data.license)}">back to top</a>)</p>
 
 ## Screenshots
+#
 ![]()
 <p align="right">(<a href="${renderLicenseSection(data.license)}">back to top</a>)</p>
 
 ## Questions
+#
 Github: https://github.com/${data.github}
-
+#
 Email me with any questions: ${data.email}
 <p align="right">(<a href="#${renderLicenseSection(data.license)}">back to top</a>)</p>
 
-## Link to the site:
+## Links
+#
 [${data.project}]()
+#
 [Github Repo]()
 <p align="right">(<a href="#${renderLicenseSection(data.license)}">back to top</a>)</p>
 `;}
